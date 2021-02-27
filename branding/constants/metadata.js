@@ -1,8 +1,8 @@
 export default {
-  APPLICATION_NAME: 'ocelot.social',
-  APPLICATION_SHORT_NAME: 'ocelot',
-  APPLICATION_DESCRIPTION: 'Ocelot Social Community',
+  APPLICATION_NAME: 'wir.social',
+  APPLICATION_SHORT_NAME: 'wir',
+  APPLICATION_DESCRIPTION: 'Wir Social Community',
   COOKIE_NAME: 'ocelot-social-token',
-  ORGANIZATION_NAME: 'busFaktor e.V.',
-  ORGANIZATION_JURISDICTION: 'Somewhere',
+  ORGANIZATION_NAME: 'Webcraft-Media',
+  ORGANIZATION_JURISDICTION: 'Deutschland',
 }

@@ -1,7 +1,7 @@
 export default {
-  ORGANIZATION: 'https://ocelot.social',
-  DONATE: 'https://ocelot-social.herokuapp.com/donations',
-  IMPRINT: 'https://ocelot-social.herokuapp.com/imprint',
-  DATA_PRIVACY: 'https://ocelot-social.herokuapp.com/imprint',
-  FAQ: 'https://ocelot-social.herokuapp.com/#kontakt',
+  ORGANIZATION: 'https://webcraft-media.de',
+  DONATE: 'https://webcraft-media.de/donate-for-wir-social.html',
+  IMPRINT: 'https://www.webcraft-media.de/#!impressum',
+  DATA_PRIVACY: 'https://www.webcraft-media.de/#!datenschutz',
+  FAQ: 'https://www.webcraft-media.de/#!contact',
 }

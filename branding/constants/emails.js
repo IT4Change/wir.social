@@ -1,4 +1,4 @@
 export default {
-  SUPPORT: 'hello@ocelot.social',
-  MODERATION: 'hello@ocelot.social',
+  SUPPORT: 'team@wir.social',
+  MODERATION: 'team@wir.social',
 }
