@@ -1,14 +1,14 @@
 {
-  "name": "ocelot-social-branded",
+  "name": "wir.social",
   "version": "1.0.3",
   "ocelotDockerVersionTag": "1.0.3-82",
-  "dockerOrganisation": "ocelotsocialnetwork",
-  "description": "ocelot.social Branded",
+  "dockerOrganisation": "wirsocial",
+  "description": "wir.social ocelot.social Network",
   "author": "ocelot.social Community",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ocelot-Social-Community/Ocelot-Social-Deploy-Rebranding.git"
+    "url": "https://github.com/wir-social/wir-social.git"
   }
 }
