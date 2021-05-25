@@ -1,3 +1,4 @@
+// this file is duplicated in `backend/src/config/links.js` and `webapp/constants/links.js` and replaced on rebranding
 export default {
   ORGANIZATION: 'https://webcraft-media.de',
   DONATE: 'https://webcraft-media.de/donate-for-wir-social.html',
