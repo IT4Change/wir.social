@@ -6,7 +6,7 @@ services:
   # WEBAPP ###############################################
   ########################################################
   webapp:
-    image: ocelotsocialnetwork/webapp-branded:latest
+    image: wirsocial/webapp-branded:latest
     ports:
       - 3000:3000
     networks:
@@ -23,7 +23,7 @@ services:
   # BACKEND ##############################################
   ########################################################
   backend:
-    image: ocelotsocialnetwork/backend-branded:latest
+    image: wirsocial/backend-branded:latest
     networks:
       - test-network
     depends_on:
@@ -49,7 +49,7 @@ services:
   # NEO4J ################################################
   ########################################################
   neo4j:
-    image: ocelotsocialnetwork/neo4j-community-branded:latest
+    image: wirsocial/neo4j-community-branded:latest
     networks:
       - test-network
     environment:
@@ -62,7 +62,7 @@ services:
   # MAINTENANCE ##########################################
   ########################################################
   maintenance:
-    image: ocelotsocialnetwork/maintenance-branded:latest
+    image: wirsocial/maintenance-branded:latest
     networks:
       - test-network
     ports:
