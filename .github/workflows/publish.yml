@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - wir-social # for testing while developing
+      # - wir-social # for testing while developing
 
 jobs:
   ##############################################################################
