@@ -4,5 +4,5 @@ export default {
   MODERATION_EMAIL: 'team@wir.social',
   // ATTENTION: the following links have to be defined even for internal pages with full URLs as example like 'https://staging.ocelot.social/support', because they are used in e-mails!
   ORGANIZATION_LINK: 'https://webcraft-media.de', // Wolle 'https://wir.social/organization',
-  SUPPORT_LINK: 'https://webcraft-media.de', // Wolle 'https://wir.social/support',
+  SUPPORT_LINK: 'https://www.webcraft-media.de/#!contact', // Wolle 'https://wir.social/support',
 }

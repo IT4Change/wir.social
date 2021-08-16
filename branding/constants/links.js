@@ -68,7 +68,7 @@ const CODE_OF_CONDUCT = defaultPageParamsPages.CODE_OF_CONDUCT.overwrite({
   },
 })
 const DATA_PRIVACY = defaultPageParamsPages.DATA_PRIVACY.overwrite({
-  externalLink: https://www.webcraft-media.de/#!datenschutz, // if string is defined and not empty it's dominating
+  externalLink: 'https://www.webcraft-media.de/#!datenschutz', // if string is defined and not empty it's dominating
 
   internalPage: {
     // footerIdent: 'site.data-privacy', // localized string identifier, if undefined default is used
@@ -94,7 +94,7 @@ const FAQ = defaultPageParamsPages.FAQ.overwrite({
   },
 })
 const SUPPORT = defaultPageParamsPages.SUPPORT.overwrite({
-  externalLink: 'https://webcraft-media.de', // if string is defined and not empty it's dominating
+  externalLink: 'https://www.webcraft-media.de/#!contact', // if string is defined and not empty it's dominating
 
   internalPage: {
     // footerIdent: 'site.support', // localized string identifier, if undefined default is used
