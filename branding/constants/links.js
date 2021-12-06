@@ -81,7 +81,7 @@ const DATA_PRIVACY = defaultPageParamsPages.DATA_PRIVACY.overwrite({
   },
 })
 const FAQ = defaultPageParamsPages.FAQ.overwrite({
-  externalLink: 'https://www.webcraft-media.de/#!contact', // if string is defined and not empty it's dominating
+  // externalLink: null, // if string is defined and not empty it's dominating
 
   internalPage: {
     // footerIdent: 'site.faq', // localized string identifier, if undefined default is used

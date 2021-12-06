@@ -157,6 +157,8 @@ $ helm --kubeconfig=/../kubeconfig.yaml install dns bitnami/external-dns -f dns.
 
 ### Ocelot.Social
 
+***Attention:** Before installing your own ocelot.social network, you need to create a DockerHub (account and) organization, put its name in the `package.json` file, and push your deployment and rebranding code to GitHub so that GitHub Actions can push your Docker images to DockerHub. This is because Kubernetes will pull these images to create PODs from them.*
+
 All commands for ocelot need to be executed in the kubernetes folder. Therefore `cd deployment/kubernetes/` is expected to be run before every command. Furthermore the given commands will install ocelot into the default namespace. This can be modified to by attaching `--namespace not.default`.
 
 #### Install
@@ -181,6 +183,17 @@ $ helm upgrade ocelot ./
 $ helm --kubeconfig=/../kubeconfig.yaml upgrade ocelot ./
 ```
 
+#### Rollback
+
+Run for a rollback, in case something went wrong:
+
+```bash
+# kubeconfig.yaml set globaly
+$ helm rollback ocelot
+# or kubeconfig.yaml in your repo, then adjust
+$ helm --kubeconfig=/../kubeconfig.yaml rollback ocelot
+```
+
 #### Uninstall
 
 Be aware that if you uninstall ocelot the formerly bound volumes become unbound. Those volumes contain all data from uploads and database. You have to manually free their reference in order to bind them again when reinstalling. Once unbound from their former container references they should automatically be rebound (considering the sizes did not change)
@@ -191,6 +204,10 @@ $ helm uninstall ocelot
 # or kubeconfig.yaml in your repo, then adjust
 $ helm --kubeconfig=/../kubeconfig.yaml uninstall ocelot
 ```
+
+## Backups
+
+You can and should do [backups](/deployment/kubernetes/Backup.md) with Kubernetes for sure.
 
 ## Error Reporting
 
