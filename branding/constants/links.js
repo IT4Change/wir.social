@@ -3,7 +3,7 @@
 import { defaultPageParamsPages } from '~/components/utils/InternalPages.js'
 
 const ORGANIZATION = defaultPageParamsPages.ORGANIZATION.overwrite({
-  externalLink: 'https://webcraft-media.de', // if string is defined and not empty it's dominating
+  // externalLink: 'null', // if string is defined and not empty it's dominating
 
   internalPage: {
     // footerIdent: 'site.made', // localized string identifier, if undefined default is used
