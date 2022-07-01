@@ -1,7 +1,7 @@
 {
   "name": "wir.social",
-  "version": "1.0.7",
-  "ocelotDockerVersionTag": "1.0.7-171",
+  "version": "1.0.8",
+  "ocelotDockerVersionTag": "1.0.8-182",
   "dockerOrganisation": "wirsocial",
   "description": "wir.social Network driven by ocelot.social",
   "author": "ocelot.social Community",
