@@ -16,7 +16,11 @@ const ORGANIZATION = defaultPageParamsPages.ORGANIZATION.overwrite({
   },
 })
 const DONATE = defaultPageParamsPages.DONATE.overwrite({
-  externalLink: 'https://webcraft-media.de/donate-for-wir-social.html', // if string is defined and not empty it's dominating
+  // if defined it's dominating
+  externalLink: {
+    url: 'https://webcraft-media.de/donate-for-wir-social.html',
+    target: '_blank',
+  },
 
   internalPage: {
     // footerIdent: 'site.donate', // localized string identifier, if undefined default is used
@@ -29,7 +33,11 @@ const DONATE = defaultPageParamsPages.DONATE.overwrite({
   },
 })
 const IMPRINT = defaultPageParamsPages.IMPRINT.overwrite({
-  externalLink: 'https://www.webcraft-media.de/#!impressum', // if string is defined and not empty it's dominating
+  // if defined it's dominating
+  externalLink: {
+    url: 'https://www.webcraft-media.de/#!impressum',
+    target: '_blank',
+  },
 
   internalPage: {
     // footerIdent: 'site.imprint', // localized string identifier, if undefined default is used
@@ -68,7 +76,11 @@ const CODE_OF_CONDUCT = defaultPageParamsPages.CODE_OF_CONDUCT.overwrite({
   },
 })
 const DATA_PRIVACY = defaultPageParamsPages.DATA_PRIVACY.overwrite({
-  externalLink: 'https://www.webcraft-media.de/#!datenschutz', // if string is defined and not empty it's dominating
+  // if defined it's dominating
+  externalLink: {
+    url: 'https://www.webcraft-media.de/#!datenschutz',
+    target: '_blank',
+  },
 
   internalPage: {
     // footerIdent: 'site.data-privacy', // localized string identifier, if undefined default is used
@@ -94,7 +106,11 @@ const FAQ = defaultPageParamsPages.FAQ.overwrite({
   },
 })
 const SUPPORT = defaultPageParamsPages.SUPPORT.overwrite({
-  externalLink: 'https://www.webcraft-media.de/#!contact', // if string is defined and not empty it's dominating
+  // if defined it's dominating
+  externalLink: {
+    url: 'https://www.webcraft-media.de/#!contact',
+    target: '_blank',
+  },
 
   internalPage: {
     // footerIdent: 'site.support', // localized string identifier, if undefined default is used
