@@ -9,7 +9,7 @@ repositories:
     url: git+https://github.com/Ocelot-Social-Community/Ocelot-Social@deployment/helm/charts?ref=hetzner
 
 releases:
-  - name: ocelot-social
+  - name: wir-social
     namespace: {{ .StateValues.namespace }}
     chart: ocelot-social/ocelot-social
     values:
@@ -19,7 +19,7 @@ releases:
 
   - name: ocelot-neo4j
     namespace: {{ .StateValues.namespace }}
-    chart: ocelot-social/ocelot-social
+    chart: ocelot-social/ocelot-neo4j
     values:
     - ./values/ocelot.yaml.gotmpl
     secrets:
