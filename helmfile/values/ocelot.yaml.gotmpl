@@ -1,4 +1,5 @@
 domain: {{ .StateValues.domain }}
+redirect_domains: {{ .StateValues.redirect_domains }}
 
 cert_manager:
   issuer: {{ .Release.Name }}-letsencrypt-prod
