@@ -1,6 +1,7 @@
 {{ $image_tag := env "IMAGE_TAG" | default  (exec "../scripts/branded_image_tag.sh" (list) | trim) }}
 
 domain: wir-social-staging.ocelot-social.it4c.org
+redirect_domains: []
 namespace: wir-social-ocelot
 image_tag: {{ $image_tag }}
 github_repository: wir-social/wir.social
