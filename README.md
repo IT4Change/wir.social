@@ -1,7 +1,7 @@
 # Wir.Social Deploys And Rebrands Ocelot.Social
 
-[![Build Status Publish](https://github.com/wir-social/wir-social/actions/workflows/publish.yml/badge.svg)](https://github.com/wir-social/wir-social/actions)
-[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/wir-social/wir-social/blob/LICENSE.md)
+[![Build Status Publish](https://github.com/IT4Change/wir.social/actions/workflows/publish.yml/badge.svg)](https://github.com/IT4Change/wir.social/actions)
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/IT4Change/wir.social/blob/LICENSE.md)
 [![Discord Channel](https://img.shields.io/discord/489522408076738561.svg)](https://discord.gg/AJSX9DCSUA)
 [![Open Source Helpers](https://www.codetriage.com/ocelot-social-community/ocelot-social-deploy-rebranding/badges/users.svg)](https://www.codetriage.com/ocelot-social-community/ocelot-social-deploy-rebranding)
 

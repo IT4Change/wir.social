@@ -1,6 +1,6 @@
 services:
   webapp:
-    image: ghcr.io/wir-social/wir.social/webapp
+    image: ghcr.io/IT4Change/wir.social/webapp
     build:
       context: .
       dockerfile: ./docker/webapp.Dockerfile
@@ -18,7 +18,7 @@ services:
       - backend
 
   backend:
-    image: ghcr.io/wir-social/wir-social/backend
+    image: ghcr.io/IT4Change/wir.social/backend
     build:
       context: .
       dockerfile: ./docker/backend.Dockerfile
@@ -38,7 +38,7 @@ services:
       - neo4j
 
   maintenance:
-    image: ghcr.io/wir-social/wir.social/maintenance
+    image: ghcr.io/IT4Change/wir.social/maintenance
     build:
       context: .
       dockerfile: ./docker/maintenance.Dockerfile
