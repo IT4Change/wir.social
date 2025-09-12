@@ -1,6 +1,6 @@
 services:
   webapp:
-    image: ghcr.io/IT4Change/wir.social/webapp
+    image: ghcr.io/it4change/wir.social/webapp
     build:
       context: .
       dockerfile: ./docker/webapp.Dockerfile
