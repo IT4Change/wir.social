@@ -2,10 +2,23 @@
 #{{ $ocelot_image_tag := env "OCELOT_IMAGE_TAG" | default  (exec "../scripts/ocelot_image_tag.sh" (list) | trim) }}
 {{ $image_tag := env "IMAGE_TAG" | default  (exec "../scripts/branded_image_tag.sh" (list) | trim) }}
 
-domain: wir.social
-redirect_domains: | # i don't understand it, but its the way to get it to work: https://stackoverflow.com/a/52840704
-    [ "www.wir.social"]
-namespace: wir-social-ocelot-production
-#image_tag: {{ env "IMAGE_TAG" | default (printf "ocelot-%s--branded-%s" $ocelot_image_tag $branded_image_tag) }}
-image_tag: {{ $image_tag }}
-github_repository: it4change/wir.social
+deploy:
+    GITHUB_REPOSITORY: it4change/wir.social
+    IMAGE_TAG: {{ $image_tag }}
+    DOMAIN: wir.social
+    REDIRECT_DOMAINS: |
+        [ "www.wir.social"]
+    NAMESPACE: wir-social-ocelot-production
+    RELEASE_NAME_OCELOT: wir-social
+
+ocelot:
+    options:
+        PRODUCTION_DB_CLEAN_ALLOW: "false"
+        PUBLIC_REGISTRATION: "false"
+        INVITE_REGISTRATION: "true"
+        CATEGORIES_ACTIVE: "false"
+        MAX_PINNED_POSTS: "1"
+        BADGES_ENABLED: "false"
+        NETWORK_NAME: "wir.social"
+        ASK_FOR_REAL_NAME: "false"
+        REQUIRE_LOCATION: "false"

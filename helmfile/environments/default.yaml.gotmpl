@@ -1,7 +1,21 @@
 {{ $image_tag := env "IMAGE_TAG" | default  (exec "../scripts/branded_image_tag.sh" (list) | trim) }}
 
-domain: wir-social-staging.ocelot-social.it4c.org
-redirect_domains: []
-namespace: wir-social-ocelot
-image_tag: {{ $image_tag }}
-github_repository: it4change/wir.social
+deploy:
+    GITHUB_REPOSITORY: it4change/wir.social
+    IMAGE_TAG: {{ $image_tag }}
+    DOMAIN: wir-social-staging.ocelot-social.it4c.org
+    REDIRECT_DOMAINS: []
+    NAMESPACE: wir-social-ocelot
+    RELEASE_NAME_OCELOT: wir-social
+
+ocelot:
+    options:
+        PRODUCTION_DB_CLEAN_ALLOW: "false"
+        PUBLIC_REGISTRATION: "false"
+        INVITE_REGISTRATION: "true"
+        CATEGORIES_ACTIVE: "false"
+        MAX_PINNED_POSTS: "1"
+        BADGES_ENABLED: "false"
+        NETWORK_NAME: "wir.social"
+        ASK_FOR_REAL_NAME: "false"
+        REQUIRE_LOCATION: "false"
