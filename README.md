@@ -10,7 +10,7 @@ The forked original repository is [Ocelot-Social-Deploy-Rebranding](https://gith
 
 <!-- markdownlint-disable MD033 -->
 <p align="center">
-  <a href="https://wir.social" target="_blank"><img src="branding/static/img/custom/logo-squared.svg" alt="wir.social" width="40%" height="40%"></a>
+  <a href="https://wir.social" target="_blank"><img src="brandings/wir/static/img/custom/logo-squared.svg" alt="wir.social" width="40%" height="40%"></a>
 </p>
 <!-- markdownlint-enable MD033 -->
 
@@ -47,7 +47,7 @@ Since all deployment methods described here depend on [Docker](https://docker.co
 
 The next step is:
 
-- [Configure And Branding](/branding/README.md)
+- [Configure And Branding](/brandings/wir/README.md)
 
 ### Optional: Locally Testing Configuration And Branding
 
