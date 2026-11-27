@@ -43,6 +43,11 @@ export default defineBranding({
     applicationDescription: 'Wir Social Community',
     organizationName: 'Webcraft-Media',
     organizationJurisdiction: 'Deutschland',
+    // Link previews (Discord, WhatsApp, …) render no SVG, so the squared logo cannot stand in: without
+    // a raster image of its own the preview shows the framework's ocelot. Rendered from
+    // assets/logo-squared.svg at 1200x1140 on white (transparency turns black in some previews).
+    ogImage: 'assets/og-image.png',
+    ogImageAlt: 'wir.social Logo',
   },
   group: {
     // stricter than the default (3): require a longer group description.
